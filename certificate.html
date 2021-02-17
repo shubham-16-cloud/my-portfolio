@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <link rel="stylesheet" href="css\bootstrap.css">
+  <link rel="stylesheet" href="css\bootstrap-grid.css">
+  <link rel="stylesheet" href="css\bootstrap-reboot.css">
+    </head>
+    <style>
+      .imghight{
+        border: 4px #f25c38  groove;
+      }
+      .fade.show {
+        background: #343a40de;
+    }
+    .modal-dialog {
+      max-width: 50%;
+  }
+  .modal-content{
+    background:none;
+    border: none;
+  }
+  .modal-header{
+    border-bottom: none;
+  }
+  .modal-body::before{
+    content: '';
+    border: 9px solid red;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 13%;
+    border-right-color: transparent;
+    height: 13%;
+    border-bottom-color: transparent;
+    border-left-color: blueviolet;
+  }
+  .modal-body::after{
+    content: '';
+    border: 9px solid transparent;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 13%;
+    border-right-color: #dc3545;
+    height: 13%;
+    border-bottom-color: #007bff;
+    border-left-color:transparent;
+  }
+  .close{
+    color:white !important;
+  }
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.747);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(90deg,#ff8a00,#e52e71);
+    border-radius: 20%;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(90deg,#ff8a00,#e52e71);
+  }
+    </style>
+    <body style="background: #343a40;">
+    <div class="container">
+      <a href="index.html" style="color:#ff8a00 ;"><i class="fas fa-home fa-2x"></i></a>
+        <div class="row">
+            <div class="col-md-4"><a href="#" data-toggle="modal" data-target="#exampleModal" > <img src="img/certificate/Shubham Web Design.jpg" class="img-fluid imghight"></a></div>
+            <div class="col-md-4"><a href="#" data-toggle="modal" data-target="#exampleModal1" > <img src="img/certificate/Shubham Web Development.jpg" alt="" class="img-fluid imghight"></a></div>
+            <div class="col-md-4"><a href="#" data-toggle="modal" data-target="#exampleModal2" ><img src="img/certificate/google cloud certificate.png" alt="" class="img-fluid imghight"></a></div>
+        </div>
+        <div class="row" style="margin-top: 10px;">
+          <div class="col-md-6"><a href="#" data-toggle="modal" data-target="#exampleModal3" > <img src="img/certificate/devgymcertificate.png" class="img-fluid imghight"></a></div>
+            <div class="col-md-6"><a href="#" data-toggle="modal" data-target="#exampleModal4" > <img src="img/certificate/certificate_IIRS.png" alt="" class="img-fluid imghight"></a></div>
+        </div>
+
+    </div>
+
+    <!--modals-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/certificate/Shubham Web Design.jpg" class="img-fluid">
+            </div>
+        
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/certificate/Shubham Web Development.jpg" alt="" class="img-fluid">
+            </div>
+        
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/certificate/google cloud certificate.png" class="img-fluid">
+            </div>
+        
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="img/certificate/devgymcertificate.png" class="img-fluid">
+              
+            </div>
+        
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/certificate/certificate_IIRS.png" class="img-fluid">
+            </div>
+        
+          </div>
+        </div>
+      </div>
+
+    </body>
+        <script src="js\jquery-3.5.1.js"></script>
+        <script src="js\typed.js"></script>
+        <script src="js\all.js"></script>
+        <script src="js\popper.min.js"></script>
+        <script src="js\bootstrap.js"></script>
+        <script src="js\bootstrap.bundle.js"></script>
+    
+</html>
