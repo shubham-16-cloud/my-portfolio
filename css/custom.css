@@ -9,7 +9,6 @@ html {
     background-attachment: fixed;
     height: 100vh;
     color: linear-gradient(to right,#ff8a00,#e52e71);
-   
 }
 #headname{
     background: linear-gradient(to right,#ff8a00,rgba(138, 68, 68, 0.911));
@@ -185,9 +184,26 @@ h5{
     text-align: center;
 }
 .main-timeline4:before {
-   
+    height: 85% !important;
     background-image: linear-gradient(90deg,#ff8a00,#e52e71) !important;
 }
+
+.main-timeline4 .timeline:nth-child(5n) .year {
+    border-color:rgb(245, 73, 87);
+    color:rgb(245, 73, 87);
+}
+
+.main-timeline4 .timeline:nth-child(6n) .year {
+    border-color: #1ebad0 !important;
+    color: #1ebad0 !important;
+}
+.main-timeline4 .timeline:nth-child(6n) .year:before {
+    border-right: 20px solid #1ebad0 !important;
+}
+.main-timeline4 .timeline:nth-child(6n) .title {
+    color: #1ebad0 !important;
+}
+
 #resume h2::before{
     content: '';
     position: relative;
@@ -341,7 +357,11 @@ h5{
     background-image: linear-gradient(90deg,#ff8a00,#e52e71) ;
     border-radius: 11%;    
     padding: 10px 0px 10px 0px;
-} 
+}
+.modal-dialog::before{
+    content: "";
+    border:5px solid red
+}
 .h5cover{
     text-align: justify;
     padding: 18px !important;
@@ -368,7 +388,7 @@ h5{
     padding: 15px;
 }
 .padrow{
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 10px 0px;
 }
 p{
     margin-bottom: 0rem;
@@ -376,11 +396,29 @@ p{
 .text{
     text-align: end;
 }
-.padrow a img:hover{
+/* .padrow a img:hover{
     background-image: linear-gradient(90deg,#ff8a00,#e52e71) ;
     opacity: 0.5;
-    transition: 1s;
+    transition: 1s; 
+}*/
+#row .card{
+    transition: transform 2s;
 }
+ #row .card:hover{
+    transform: scale(0.9,0.9);
+}
+.text-white{
+    color: black !important;
+}
+#row .card:hover h5{
+    transform: scale(1.3);
+    margin-top: 10px;
+}
+#row .card h5{
+    font-weight: bold;
+    transition: transform 1.5s linear;
+}
+
 #services{
     
     text-align: center;
