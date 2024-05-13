@@ -597,9 +597,8 @@ padding: 10px 0px 2px 0px;
 }
 @media only screen and (max-width:984px){
     .nav1{
-    background: white;
-    border-radius: 12%;
-    box-shadow: 0px 2px 5px 3px orange;
+    background: rgba(255, 255, 255, 0.301);
+    border-radius: 1rem;
 }
 }
 @media only screen and (max-width:762px){
@@ -657,6 +656,7 @@ padding: 10px 0px 2px 0px;
         width: 79%;
         text-align: center;
         height: fit-content;
+        background:none !important;
     }
     .navbar-light .navbar-toggler {
         
@@ -741,6 +741,11 @@ padding: 10px 0px 2px 0px;
 .main-timeline4 .timeline:nth-child(4n) .year{border-color:#f8781f;color:#f8781f}
 .main-timeline4 .timeline:nth-child(4) .year:before{border-right-color:#f8781f}
 .main-timeline4 .timeline:nth-child(4n) .title{color:#f8781f}
+.main-timeline4 .timeline:nth-child(7n) .year{border-color:#7cba01;color:#7cba01}
+.main-timeline4 .timeline:nth-child(7) .year:before{border-left-color:#7cba01}
+.main-timeline4 .timeline:nth-child(7n) .title {
+    color: #7cba01;
+}
 @media only screen and (max-width:1200px){.main-timeline4 .year{top:50%;transform:translateY(-50%)}
 }
 @media only screen and (max-width:990px){.main-timeline4 .timeline{padding-left:75px}
